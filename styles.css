@@ -1,0 +1,239 @@
+/* Reset and global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header and navigation */
+header {
+  background-color: #090909;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #fcce64;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fcce64;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #fcce64, #f9c74f);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000; /* Change text color to white for better contrast */
+}
+
+.hero p {
+  font-size: 20px;
+  color: #000000; /* Adjust paragraph text color for better readability */
+}
+
+/* Add styles for CTA button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6347; /* Choose a vibrant color for the button */
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4838; /* Darken the button color on hover for visual feedback */
+}
+
+/* Products section */
+.products {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+  text-align: center; /* Center align the content */
+}
+
+.products h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333; /* Adjust color as needed */
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center; /* Center align the cards */
+}
+
+/* Updated CSS for the .product-card */
+.product-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* Add border radius for a softer look */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Add border radius to images */
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #333; /* Adjust color as needed */
+}
+
+.product-card p {
+  margin: 10px 0;
+  color: #666; /* Adjust color as needed */
+}
+
+
+/* cart button */
+/* Updated CSS for the .add-to-cart-button */
+.add-to-cart-button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #007bff;
+}
+
+
+/* Notes section */
+.notes {
+  background-color: #dddbd7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.notes h2 {
+  font-size: 36px;
+  /* font-weight */
+}
+
+footer {
+  /* border: 4px solid red; */
+    background-color: #000; /* Dark black background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a{
+    /* border: 4px solid red; */
+    margin-top: 5px;
+    margin: 5px;
+    color: #f9c74f;
+}
+
+/* CSS for the input field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: 0.5s;
+  outline: none;
+  font-size: 16px;
+}
+
+/* input[type="text"]:focus {
+  border: 2px solid #f9c74f;
+} */
+
+/* CSS for the submit button */
+button[type="submit"] {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bff;
+}
